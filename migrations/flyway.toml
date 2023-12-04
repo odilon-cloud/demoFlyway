@@ -18,9 +18,3 @@ mixed = true
 outOfOrder = true
 locations = [ "filesystem:migrations" ]
 validateMigrationNaming = true
-
-[environments.target1]
-url = "jdbc:postgresql://161.35.170.185:30579/flyway?prepareThreshold=0"
-user = "irembosuperuser"
-password = "p(Js@<9kXA3DB/C:|bcyfU67"
-schemas = [ "public" ]
