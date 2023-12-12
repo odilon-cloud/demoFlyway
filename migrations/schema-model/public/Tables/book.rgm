@@ -1,0 +1,28 @@
+table "public"."book" {
+  primaryKey = {
+    columns = [
+      "id"
+    ]
+    name = "book_pkey"
+    objectType = primaryKey
+  }
+  columns = (
+    column "id" {
+      type = integer
+      null = NOT NULL
+    }
+    column "author_email" {
+      type = character varying(255)
+    }
+    column "author_first_name" {
+      type = character varying(255)
+    }
+    column "author_last_name" {
+      type = character varying(255)
+    }
+    column "title" {
+      type = character varying(255)
+    }
+  )
+}
+

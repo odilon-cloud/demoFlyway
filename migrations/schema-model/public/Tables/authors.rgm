@@ -1,0 +1,25 @@
+table "public"."authors" {
+  primaryKey = {
+    columns = [
+      "author_id"
+    ]
+    name = "authors_pkey"
+    objectType = primaryKey
+  }
+  columns = (
+    column "author_id" {
+      type = integer
+      null = NOT NULL
+    }
+    column "author_name" {
+      type = character varying(255)
+    }
+    column "birthdate" {
+      type = date
+    }
+    column "nationality" {
+      type = character varying(100)
+    }
+  )
+}
+
